@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -30,21 +31,26 @@
                                     <constraint firstAttribute="height" constant="134" id="mCR-dN-42J"/>
                                 </constraints>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qt8-sO-Bll"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qt8-sO-Bll">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="DIQ-Ae-UXU"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="1IA-ub-u9F" firstAttribute="leading" secondItem="vP0-zG-08X" secondAttribute="leading" id="Aic-UM-y28"/>
+                            <constraint firstItem="qt8-sO-Bll" firstAttribute="top" secondItem="1IA-ub-u9F" secondAttribute="top" id="Cjb-pH-x57"/>
                             <constraint firstAttribute="trailing" secondItem="Ijv-Os-oXd" secondAttribute="trailing" id="DSb-9y-fgd"/>
                             <constraint firstItem="Ijv-Os-oXd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FAr-dX-Aih"/>
-                            <constraint firstItem="qt8-sO-Bll" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HXP-qx-ZEY"/>
                             <constraint firstItem="1IA-ub-u9F" firstAttribute="leading" secondItem="Ijv-Os-oXd" secondAttribute="leading" id="Rpd-WC-elb"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qt8-sO-Bll" secondAttribute="bottom" id="Xdz-QO-T80"/>
+                            <constraint firstItem="qt8-sO-Bll" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TRY-QF-OjB"/>
+                            <constraint firstItem="qt8-sO-Bll" firstAttribute="centerX" secondItem="vP0-zG-08X" secondAttribute="centerX" id="Uwf-Qf-ybz"/>
                             <constraint firstItem="1IA-ub-u9F" firstAttribute="top" secondItem="vP0-zG-08X" secondAttribute="top" id="liv-gb-kqX"/>
-                            <constraint firstAttribute="trailing" secondItem="qt8-sO-Bll" secondAttribute="trailing" id="pK6-zQ-vRT"/>
-                            <constraint firstItem="1IA-ub-u9F" firstAttribute="top" secondItem="qt8-sO-Bll" secondAttribute="top" id="poz-tD-JZx"/>
-                            <constraint firstItem="qt8-sO-Bll" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rcb-tz-J5v"/>
+                            <constraint firstItem="qt8-sO-Bll" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="61" id="npU-L8-iht"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ijv-Os-oXd" secondAttribute="bottom" id="sqC-UZ-fmY"/>
+                            <constraint firstItem="qt8-sO-Bll" firstAttribute="bottom" secondItem="vP0-zG-08X" secondAttribute="bottom" id="uoS-56-YnG"/>
+                            <constraint firstItem="qt8-sO-Bll" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="vWA-Tg-aft"/>
                         </constraints>
                     </view>
                     <connections>
